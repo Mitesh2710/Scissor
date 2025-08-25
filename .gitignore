@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+
+# Secret keys
+serviceAccountKey.json
+.env
+
+# Build folders
+dist/
+build/
+
+# OS files
+.DS_Store

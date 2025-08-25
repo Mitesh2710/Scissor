@@ -1,0 +1,72 @@
+<!-- scissor-logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img" aria-label="Scissor Salon logo">
+  <defs>
+    <!-- Gold color -->
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E6B942"/>
+      <stop offset="60%" stop-color="#D49E2A"/>
+      <stop offset="100%" stop-color="#B77B18"/>
+    </linearGradient>
+
+    <!-- subtle drop shadow -->
+    <filter id="f" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
+      <feOffset in="blur" dx="8" dy="14" result="off"/>
+      <feFlood flood-color="#000" flood-opacity="0.18"/>
+      <feComposite in2="off" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- shadow under the scissor (soft, slightly gray) -->
+  <ellipse cx="210" cy="310" rx="120" ry="18" fill="#000000" fill-opacity="0.08"/>
+
+  <!-- Scissor silhouette (stylized, single scissor) -->
+  <g transform="translate(60,20)" filter="none">
+    <!-- blade (left) -->
+    <path d="M160 40 
+             C150 30 130 22 110 18
+             L85 150
+             C95 155 130 168 160 130
+             Z"
+          fill="url(#g)" />
+
+    <!-- blade (right) -->
+    <path d="M170 40 
+             C190 30 215 25 260 22
+             L300 150
+             C275 165 220 170 170 130
+             Z"
+          fill="url(#g)" />
+
+    <!-- pivot -->
+    <circle cx="200" cy="120" r="12" fill="#fff"/>
+    <circle cx="200" cy="120" r="8" fill="url(#g)"/>
+
+    <!-- upper slim blade tips (sharp points) -->
+    <path d="M120 18 L200 110 L280 18" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- handle curve and lower ring -->
+    <path d="M160 130 
+             C140 160 110 200 120 245
+             C130 288 170 295 205 270"
+          fill="none" stroke="url(#g)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <circle cx="140" cy="285" r="26" fill="url(#g)"/>
+    <!-- small inner hole to mimic ring -->
+    <circle cx="140" cy="285" r="10" fill="#fff"/>
+  </g>
+
+  <!-- Text to the right, aligned visually similar to your PNG -->
+  <g transform="translate(360,90)">
+    <text x="0" y="60" font-family="Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="96" font-weight="800" fill="url(#g)" letter-spacing="-2">
+      SCISSOR
+    </text>
+
+    <!-- optional small slogan line (comment out if not needed) -->
+    <!-- <text x="0" y="110" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="20" fill="#9a6b0f">YOUR SLOGAN HERE</text> -->
+  </g>
+</svg>

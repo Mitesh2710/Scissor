@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+  <defs>
+    <!-- Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8E6A0"/>
+      <stop offset="35%" stop-color="#E7C765"/>
+      <stop offset="70%" stop-color="#C9A646"/>
+      <stop offset="100%" stop-color="#8C6A2B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Brand Text -->
+  <text x="50%" y="50%" text-anchor="middle" font-family="serif" font-size="60" font-weight="bold" fill="url(#goldGrad)" dy=".3em">
+    SCISSOR
+  </text>
+</svg>
